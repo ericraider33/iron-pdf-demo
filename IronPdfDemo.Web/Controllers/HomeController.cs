@@ -35,7 +35,7 @@ public class HomeController : Controller
         renderer.RenderingOptions.CssMediaType = PdfCssMediaType.Print;
         renderer.RenderingOptions.Timeout = 30;                     // seconds
         renderer.RenderingOptions.WaitFor.JavaScript();
-
+        
         // Render from URL
         // var uri = new UriBuilder(Request.Scheme, Request.Host.Host, Request.Host.Port.GetValueOrDefault(), "/").Uri;
         // PdfDocument pdf = await renderer.RenderUrlAsPdfAsync(uri);
