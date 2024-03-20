@@ -8,7 +8,7 @@ Console.WriteLine($"IronPDF License Valid? {IronPdf.License.IsLicensed}\n");
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation(); 
 
 // needed for IronPdf
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

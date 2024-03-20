@@ -1,6 +1,9 @@
 ﻿$(document).ready(function ()
 {
     var div = $('#js-test');
+    if (div.length === 0)
+        return;
+    
     div.html('Wow, JS actually works. Time is 0 seconds. window.status=' + window.status);
 
     var counter = 0;

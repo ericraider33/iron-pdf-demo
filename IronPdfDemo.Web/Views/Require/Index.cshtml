@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Require Page";
+}
+<div class="text-center">
+    
+    <h1 class="display-4">Require Test</h1>
+</div>
+<p>
+    <span class="css-mode">CSS in mode: </span>
+</p>
+<div>
+    <p id="require-test">
+        Static text. If you see this, that means require did NOT load correctly.
+    </p>
+    <a href="/require/index-print" target="_blank">Print Page</a>
+</div>
+@section Scripts
+{
+    <script src="~/js/require.js" asp-append-version="true"></script>
+    <script src="~/js/ascRequireTest.js" asp-append-version="true"></script>
+}
